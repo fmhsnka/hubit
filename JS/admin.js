@@ -74,7 +74,7 @@ onAuthStateChanged(auth, async (user) => {
         console.log("No user is signed in.");
         // Redirect to login page after 2 seconds
         setTimeout(() => {
-            window.location.href = "Login.html";
+            window.location.href = "index.html";
         }, 2000);
     }
 });
