@@ -93,7 +93,7 @@ regBtn.addEventListener("click", async function (event) {
                         text: 'A verification email has been sent to your email address.',
                     }).then(() => {
                         // Redirect to login page
-                        window.location.href = "login.html";
+                        window.location.href = "index.html";
                     });
                 })
                 .catch((error) => {
