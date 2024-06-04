@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script type="module" src="JS/Register.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="back">
+                <a href="Login.html">
+                    <img src="./images/backBtn.png" alt="Back">
+                </a>
+            </div>
+            <div class="formCon">
+                <form>
+                    <div class="logo-container">
+                        <img src="images/image0.png" alt="" class="hubicon">
+                        <h1>Hub<span>IT</span></h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="username" name="username" class="form-control" required
+                                placeholder="Username">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" id="email" name="email" class="form-control" required
+                                placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="password" id="password" name="password" class="form-control" required
+                                placeholder="Password">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" id="confirmPassword" name="confirm-password" class="form-control"
+                                required placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <a class="Info">Info</a>
+                    <select id="gender" name="gender" class="form-control" required>
+                        <option value="" disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="cweight" name="Current Weight" class="form-control" required
+                                placeholder="Current Weight (kg)">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="tweight" name="Target Weight" class="form-control" required
+                                placeholder="Target Weight (kg)">
+                        </div>
+                    </div>
+                    <input type="text" id="height" name="Height" class="form-control" required
+                        placeholder="Height (cm)">
+                    <button type="submit" id="regBtn" class="btn btn-primary btn-block">REGISTER</button>
+                    <div id="errorMessage"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

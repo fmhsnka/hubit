@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-sec {
+    height: 100%;
+    width: 20%;
+    background-color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content {
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content a {
+    padding: 10px 6px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav a:hover {
+    color: #f1f1f1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hubicon {
+    width: 50px;
+}
+
+
+.logo-container a {
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo-container a span {
+    color: #D56B6B;
+}
+
+.info-sec {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* Add this line */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centered-form {
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 75%
+}
+
+.user {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #D56B6B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user span {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#user-image {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.admin,
+.profile,
+.training,
+.custom,
+.settings {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.admin:hover,
+.profile:hover,
+.training:hover,
+.custom:hover,
+.settings:hover {
+    background-color: #ccc; 
+}
+
+#user-profile,
+#user-training,
+#user-custom,
+#user-settings {
+    width: 12%;
+    margin-right: 10px;
+}
+
+button[type="logout"] {
+    background-color: #D56B6B;
+    width: 100%;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+button[type="logout"]:hover {
+    background-color: #cf4d4d;
+}
+
+.theme,
+.privacy {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy {
+    cursor: pointer;
+}
+
+.privacy:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+        -2px -2px 12px rgba(0, 0, 0, 0.01);
+}
+
+.theme a {
+    font-size: 15px;
+    color: #686868;
+    font-family: 'Poppins', sans-serif;
+}
+
+.themeLight input[type="radio"] {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    outline: none;
+}
+
+.themeLight input[type="radio"]:checked {
+    background-color: #333;
+}
+
+/* Dark mode styles */
+.darkmode .nav-sec {
+    background-color: #212121; /* Dark gray background */
+}
+
+.darkmode .info-sec{
+    background: #424242; /* Darker gray background */
+}
+
+.darkmode .themeLight input[type="radio"]:checked {
+    background-color: #eeeeee;
+}
+.darkmode .theme a {
+    color: #eeeeee;
+}
+
+.darkmode .themeLight input[type="radio"] {
+    border: 2px solid #eeeeee;
+
+}
+
+.darkmode .nav-content a {
+    color: #ffffff; /* White text color */
+}
+
+.darkmode .nav a:hover {
+    color: #eeeeee; /* Light gray hover color */
+}
+
+.darkmode .logo-container a span {
+    color: #D32F2F; /* Dark red color */
+}
+
+.darkmode .centered-form {
+    background-color: #333333; /* Dark background */
+}
+
+.darkmode .privacy {
+    background-color: #3d3d3d;
+    color: #eeeeee;
+}
+
+.darkmode .user {
+    background: #D32F2F; /* Dark red background */
+}
+
+.darkmode .profile:hover,
+.darkmode .training:hover,
+.darkmode .custom:hover,
+.darkmode .settings:hover {
+    background-color: #616161; /* Medium gray hover color */
+}
+
+.darkmode button[type="logout"] {
+    background-color: #D32F2F; /* Dark red background */
+    color: #ffffff; /* White text color */
+}
+
+.darkmode button[type="logout"]:hover {
+    background-color: #B71C1C; /* Dark red hover color */
+}
+
+.darkmode .theme,
+.darkmode .form-cweight {
+    background-color: #3d3d3d; /* Dark gray background */
+    color: #ffffff; /* White text color */
+}
+
+
+.darkmode .hubicon,
+.darkmode #form-user-expand,
+.darkmode #user-profile,
+.darkmode #user-training,
+.darkmode #user-custom,
+.darkmode #user-settings{
+    filter: invert(1);
+}

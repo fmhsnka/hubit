@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/setting.css">
+    <script type="module" src="JS/setting.js" defer></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="nav-sec">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="images/image0.png" alt="" class="hubicon">
+                    <a>Hub<span>IT</span></a>
+                </div>
+                <div class="user">
+                    <img src="images/image1.png" alt="" id="user-image">
+                    <span id="usernamePlaceholder"></span>
+                </div>
+    
+                <div class="admin">
+                    <img src="images/image4.png" alt="" id="user-profile">
+                    <a href="Admin.html">Dashboard</a>
+                </div>
+    
+                <div class="profile">
+                    <img src="images/image4.png" alt="" id="user-profile">
+                    <a href="Profile.html">My Profile</a>
+                </div>
+                <div class="training">
+                    <img src="images/image2.png" alt="" id="user-training">
+                    <a href="Training.html">Training</a>
+                </div>
+                <div class="custom">
+                    <img src="images/image3.png" alt="" id="user-custom">
+                    <a href="Custom.html">Custom</a>
+                </div>
+                <div class="settings">
+                    <img src="images/image5.png" alt="" id="user-settings">
+                    <a href="Setting.html">Settings</a>
+                </div>
+                <button type="logout" id="logoutBtn">Logout</button>
+            </div>
+        </section>
+
+        <section class="info-sec">
+            <div class="centered-form">
+                <div class="theme">
+                    <a>Theme</a>
+                    <div class="themeLight">
+                        <input type="radio" id="light-mode" name="theme" value="light" checked>
+                        <label for="lightMode">Light Mode</label>
+                    </div>
+                    <div class="themeLight">
+                        <input type="radio" id="dark-mode" name="theme" value="dark">
+                        <label for="darkMode">Dark Mode</label>
+                    </div>
+                </div>
+                <div class="privacy">
+                    <span>Privacy Policy</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="JS/darkmode.js"></script> 
+    <script>
+        document.getElementById("logoutBtn").addEventListener("click", function() {
+            window.location.href = "Login.html";
+        });
+    </script>
+</body>
+
+</html>

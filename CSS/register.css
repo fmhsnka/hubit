@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+/* Custom CSS for Login Page */
+.content {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    /* Center the content horizontally */
+    margin-top: 20vh;
+    /* Adjust vertical margin to center the content vertically */
+    max-width: 700px;
+    /* Limit the width of the content */
+}
+
+.formCon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center the logo */
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #7B7A7A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.hubicon {
+    width: 104px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 span {
+    color: #D56B6B;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #757575;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#gender {
+    margin-bottom: 15px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #757575;
+}
+
+button[type="submit"] {
+    padding: 15px 30px;
+    background-color: #D56B6B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+button[type="submit"]:hover {
+    background-color: #cf4d4d;
+}
+
+.Info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.Info:hover {
+    color: #7B7A7A;
+}
+
+.back {
+    position: static;
+    top: 20px;
+    left: 20px;
+}
+
+.back a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.back img:hover {
+    transform: scale(1.1);
+}

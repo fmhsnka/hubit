@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/custom.css">
+    <script src="JS/darkmode.js"></script>
+    <script type="module" src="JS/Custom.js" defer></script>
+
+    
+</head>
+
+<body>
+    <div class="container">
+        <section class="nav-sec">
+            <div class="nav-content">
+                <div class="logo-container">
+                    <img src="images/image0.png" alt="" class="hubicon">
+                    <a>Hub<span>IT</span></a>
+                </div>
+                <div class="user">
+                    <img src="images/image1.png" alt="" id="user-image">
+                    <span id="usernamePlaceholder"></span>
+                </div>
+    
+                <div class="admin">
+                    <img src="images/image4.png" alt="" id="user-profile">
+                    <a href="Admin.html">Dashboard</a>
+                </div>
+    
+                <div class="profile">
+                    <img src="images/image4.png" alt="" id="user-profile">
+                    <a href="Profile.html">My Profile</a>
+                </div>
+                <div class="training">
+                    <img src="images/image2.png" alt="" id="user-training">
+                    <a href="Training.html">Training</a>
+                </div>
+                <div class="custom">
+                    <img src="images/image3.png" alt="" id="user-custom">
+                    <a href="Custom.html">Custom</a>
+                </div>
+                <div class="settings">
+                    <img src="images/image5.png" alt="" id="user-settings">
+                    <a href="Setting.html">Settings</a>
+                </div>
+                <button type="logout" id="logoutBtn">Logout</button>
+            </div>
+        </section>
+
+
+        <section class="info-sec">
+            <div class="centered-form" id="initialMessage">
+                <div class="imgCon">
+                    <img src="images/gym-machine.png" alt="" class="cardImg">
+                </div>
+                <div class="customText">
+                    <p>Create your first custom workout</p>
+                    <a>Set up your own unique routine</a>
+                </div>
+                <button type="submit" id="openModalBtn">Add custom workout</button>
+            </div>
+            <div class="centered-form workout-list" id="workoutList" style="display: none;">
+                <!-- Custom workouts will be appended here -->
+            </div>            
+        </section>
+
+        <button id="addWorkoutBtn" class="add-workout-btn" style="display: none;">Add custom workout</button>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-title">Add Custom Workout</h2>
+            <div class="modal-body">
+                <div class="exercise-selection">
+                    <label for="exerciseDropdown">Choose an exercise:</label>
+                    <select id="exerciseDropdown">
+                        <option value="Farmer’s-Carry">Farmer’s Carry</option>
+                        <option value="Deadlift">Deadlift</option>
+                        <option value="Bench-Press">Bench Press</option>
+                        <option value="Incline-Bench-Press">Incline Bench Press</option>
+                        <option value="Standing-Chest-Fly">Standing Chest Fly</option>
+                        <option value="Bent-over-Rowy">Bent-over Rowy</option>
+                        <option value="Lat-Pulldown">Lat Pulldown</option>
+                        <option value="Bicep-Curl">Bicep Curl</option>
+                        <option value="Triceps-Pushdown">Triceps Pushdown</option>
+                        <option value="Reverse-Curl">Reverse Curl</option>
+                        <option value="Overhead-Press">Overhead Press</option>
+                        <option value="Lateral-Raise">Lateral Raise</option>
+                        <option value="Bent-over-Reverse-Fly">Bent-over Reverse Fly</option>
+                        <option value="Squat">Squat</option>
+                        <option value="Glute-Ham-Raise">Glute Ham Raise</option>
+                        <option value="Bulgarian-Split-Squat">Bulgarian Split Squat</option>
+                    </select>
+                </div>
+                <div class="sets">
+                    <label for="repCount">Sets:</label>
+                    <button id="decreaseSets">-</button>
+                    <span id="setCount">0</span>
+                    <button id="increaseSets">+</button>
+                </div>
+
+                <div class="reps">
+                    <label for="repCount">Reps:</label>
+                    <button id="decreaseReps">-</button>
+                    <span id="repCount">0</span>
+                    <button id="increaseReps">+</button>
+                </div>
+            </div>
+            <button id="saveWorkout" class="modal-button">Save Workout</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

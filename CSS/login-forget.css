@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin-bottom: 20vh;
+}
+
+/* Custom CSS for Login Page */
+.content {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    /* Center the content horizontally */
+    margin-top: 20vh;
+    /* Adjust vertical margin to center the content vertically */
+    max-width: 400px;
+    /* Limit the width of the content */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.hubicon {
+    width: 104px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h1 span {
+    color: #D56B6B;
+}
+
+input {
+    padding: 15px;
+    border: 1px solid #757575;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    background-color: #D56B6B;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #cf4d4d;
+}
+
+a.forgot-password {
+    color: #272727;
+    text-decoration: none;
+    opacity: 0.5;
+    margin-top: 10px;
+}
+
+a.register {
+    color: #D56B6B;
+    text-decoration: none;
+}
+
+a.register:hover {
+    color: #cf4d4d;
+}
+
+a.GoBacklogin {
+    color: #D56B6B;
+    text-decoration: none;
+}
+
+a.GoBacklogin:hover {
+    color: #cf4d4d;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    display: inline;
+    margin-left: 5px;
+}
+
+.form-footer {
+    margin-top: 20px;
+}
+
+.form-footer button {
+    padding: 15px 30px;
+    background-color: #D56B6B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
